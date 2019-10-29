@@ -4,6 +4,8 @@ const bodyParser = require('koa-bodyparser');
 
 const controller = require('./middleware/controller');
 
+const env = require('./middleware/render');
+
 const app = new Koa();
 
 // log request URL:

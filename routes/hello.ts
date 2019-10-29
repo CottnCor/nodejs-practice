@@ -1,8 +1,7 @@
-const hello = async (ctx: , next: Function) => {
-  var name = ctx.params.name
-  ctx.response.body = `<h1>Hello, ${name}!</h1>`
-}
+router.get('/hello/:name', async (ctx, next) => {
+  await next()
+  let name = ctx.params.name
+  ctx.body = `<h1>Hello, ${name}!</h1>`
+})
 
-module.exports = {
-  'GET /hello/:name': hello
-}
+module.exports = router

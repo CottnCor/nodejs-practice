@@ -4,20 +4,35 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w & nodemon ./dist/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "crypto-js": "^3.1.9-1",
+    "dayjs": "^1.8.16",
     "express": "^4.17.1",
     "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
     "mime": "^2.4.4",
     "mz": "^2.7.0",
     "nunjucks": "^3.2.0",
     "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.51",
+    "@types/koa-router": "^7.0.42",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-alloy": "^0.2.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.4"
   }
 }
